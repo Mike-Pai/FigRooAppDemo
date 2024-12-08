@@ -31,15 +31,6 @@ struct HelpView: View {
           withAnimation(.easeInOut) {
             isPresented = false
             showHint = true
-//            withAnimation(.easeInOut(duration: 0.6).repeatForever(autoreverses: true)) {
-//              scale = 1.1
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-//              withAnimation {
-//                showHint = false
-//                scale = 1
-//              }
-//            }
           }
         }
         .padding()
@@ -52,7 +43,6 @@ struct HelpView: View {
     .background(
       ZStack {
         Color.orange.opacity(0.5)
-        //                VisualEffectView(effect: UIBlurEffect(style: .systemMaterial))
       }
     )
     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)

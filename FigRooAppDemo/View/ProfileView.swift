@@ -84,7 +84,6 @@ struct ProfileView: View {
   }
 }
 
-// Add this new struct for personal info fields
 struct PersonalInfoField: View {
   let title: String
   @Binding var value: String
@@ -99,7 +98,6 @@ struct PersonalInfoField: View {
         HStack {
           TextField("\(title) \(unit)", text: $value)
             .textFieldStyle(PlainTextFieldStyle())
-//            .padding(.horizontal, 4)
             .padding(.vertical, 4)
             .background(Color.white)
             .cornerRadius(8)

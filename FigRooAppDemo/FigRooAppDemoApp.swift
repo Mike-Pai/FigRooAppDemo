@@ -11,7 +11,7 @@ import SwiftUI
 struct FigRooAppDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          FigRooViewModel()
         }
     }
 }

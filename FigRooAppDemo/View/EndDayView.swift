@@ -13,12 +13,10 @@ struct EndDayView: View {
   @State private var kangarooScale: CGFloat = 0.1
   @Binding var keepKangaroo: String
   @Binding var showEndDayView: Bool
-  // Add these new state variables
   @State private var displayedText = ""
   @State private var fullText = "恭喜！你今天養了一隻..."
   @State private var currentIndex = 0
 
-  // Add this new state variable
   @State private var showCloseButton = false
 
   var body: some View {
@@ -55,8 +53,8 @@ struct EndDayView: View {
           .cornerRadius(10)
       }
       .padding(.bottom, 8)
-      .opacity(showCloseButton ? 1 : 0) // Use opacity for smooth appearance
-      .animation(.easeInOut(duration: 0.5), value: showCloseButton) // Add animation
+      .opacity(showCloseButton ? 1 : 0)
+      .animation(.easeInOut(duration: 0.5), value: showCloseButton)
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(Color.yellow.opacity(0.2))
@@ -81,7 +79,6 @@ struct EndDayView: View {
     }
   }
 
-  // Your startTypewriterEffect function remains the same
   func startTypewriterEffect() {
     Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
       if currentIndex < fullText.count {

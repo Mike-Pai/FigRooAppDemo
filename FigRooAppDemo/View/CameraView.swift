@@ -3,7 +3,7 @@
 //  FigRooApp
 //
 //  Created by 白謹瑜 on 2024/12/2.
-//
+//  目前測試有BUG...開相機與相簿那邊再修正
 
 import SwiftUI
 
